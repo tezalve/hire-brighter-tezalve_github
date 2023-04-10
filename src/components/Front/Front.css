@@ -2,4 +2,6 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    background-color: rgb(39, 39, 39);
+    padding: 0px 20px;
 }
