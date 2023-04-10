@@ -1,11 +1,19 @@
 import React from 'react';
 import './Header.css'
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
-            <h2>This is a Header</h2>
-        </div>
+        <nav className='navbar'>
+            <Link to="/"><h2>Hire Brighter</h2></Link>
+            <div className='links'>
+                <Link to="/">Statistics</Link>
+                <Link to="/">Applied Jobs</Link>
+                <Link to="/">Blog</Link>
+            </div>
+            <Button>Start Applying</Button>
+        </nav>
     );
 };
 
