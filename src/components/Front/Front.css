@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    background-color: rgb(39, 39, 39);
-    padding: 0px 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px 50px;
+}
+
+.front img{
+    width: 100%;
 }

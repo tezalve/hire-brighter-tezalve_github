@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Information Technology",
+        "available": "500",
+        "icon": "assets/Icons/chip1.png"
+    },
+    {
+        "category": "Finance and Accounting",
+        "available": "150+",
+        "icon": "assets/Icons/accounts1.png"
+    },
+    {
+        "category": "Healthcare and Medical",
+        "available": "134",
+        "icon": "/assets/Icons/social-media1.png"
+    },
+    {
+        "category": "Education and Training",
+        "available": "342",
+        "icon": "assets/Icons/business1.png"
+    }
+]

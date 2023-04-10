@@ -1,0 +1,16 @@
+.card-group .col{
+    padding: 5px;
+}
+
+.card{
+    text-align: center;
+    align-items: center;
+}
+
+.card img{
+    width: 15%;
+}
+
+.card:hover{
+    background-color: aliceblue;
+}
