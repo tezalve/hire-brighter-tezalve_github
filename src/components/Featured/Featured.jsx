@@ -41,6 +41,9 @@ const Featured = ({jobs}) => {
                     </Col>)
                     }
             </CardGroup>
+            <div className='p-3 text-center'>
+                <Button>See All Jobs</Button>
+            </div>
         </div>
     );
 };

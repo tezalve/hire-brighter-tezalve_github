@@ -1,6 +1,6 @@
 import React from 'react';
 import './Category.css'
-import { Card, CardGroup, Col, Row } from 'react-bootstrap';
+import { Button, Card, CardGroup, Col, Row } from 'react-bootstrap';
 
 const Category = ({categories}) => {
     return (
