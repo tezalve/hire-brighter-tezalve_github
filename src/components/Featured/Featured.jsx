@@ -31,12 +31,15 @@ const Featured = ({job}) => {
                                 <Card.Subtitle>{job.location}</Card.Subtitle>
                             </div>
                             <div className='d-flex align-items-center'>
-                                <img src="../../public/assets/icons/Frame-1.png" alt="" />
+                                <img src="../../public/assets/icons/Frame.png" alt="" />
                                 <Card.Subtitle>{job.salary}</Card.Subtitle>
                             </div>
                         </div>
                         <div className='p-2'>
-                            <Link><Button>View Details</Button></Link>
+                            <Link 
+                                to={`/details/${job.id}`}
+                                state={job}
+                            ><Button>View Details</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
