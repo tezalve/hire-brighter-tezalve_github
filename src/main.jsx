@@ -9,6 +9,7 @@ import {
 import Home from './components/Home/Home';
 import Layout from './components/Layout/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Jobdetails from './components/Jobdetails/Jobdetails';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
         loader: () => fetch('categories.json')
+      },
+      {
+        path: 'details/:ID',
+        element: <Jobdetails></Jobdetails>
       }
     ]
   }
