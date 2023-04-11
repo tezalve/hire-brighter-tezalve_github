@@ -7,7 +7,13 @@ import Featured from '../Featured/Featured';
 import { Button, CardGroup } from 'react-bootstrap';
 
 const Home = () => {
-    const categories = useLoaderData();
+    const [categories, setCategories] = useState([]);
+
+    useEffect( () => {
+        fetch('categories.json')
+        .then(res => res.json())
+        .then(data => setCategories(data))
+    }, [])
 
     const [jobs, setJobs] = useState([]);
 
@@ -25,7 +31,7 @@ const Home = () => {
                 <h3>Job Category List</h3>
                 <p>Discover a world of career possibilities with comprehensive job information at your fingertips. Your future is waiting.</p>
             </div>
-            
+
             <CardGroup className='px-5 mx-5'>
                 {
                     categories.map(category => <Category

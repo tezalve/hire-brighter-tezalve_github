@@ -1,3 +1,19 @@
 .jfront {
     background-color: rgb(250, 250, 250);
 }
+
+.jcard img{
+    width: 8%;
+}
+
+.applybtn {
+    width: 100%;
+}
+
+.details-container {
+    width: 100%;
+}
+
+.jcard:hover{
+    background-color: aliceblue;
+}
