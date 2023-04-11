@@ -13,7 +13,7 @@ const Category = ({categories}) => {
                 <CardGroup className='px-5 mx-5'>
                     {categories.map(category => 
                     <Col>
-                        <Card>
+                        <Card className='catCard'>
                             <Card.Img variant="top" src={category.icon}/>
                             <Card.Body>
                                 <Card.Title>{category.category}</Card.Title>
