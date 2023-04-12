@@ -20,8 +20,10 @@ const Applied = () => {
             <div className='jfront text-center p-3'>
                 <h2>Applied Jobs</h2>
             </div>
-            <Button></Button>
-            <Button></Button>
+            <div className='d-flex align-items-center justify-content-center pt-3'>
+                <Button className='m-1'>Remote</Button>
+                <Button className='m-1'>Onsite</Button>
+            </div>
             <CardGroup className='p-5'>
                 {
                     jobs != null ? jobs.map(job => oldids.map(id => job.id == id && <Appliedjobs key={job.id} job={job}></Appliedjobs>)): null

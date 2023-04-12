@@ -15,13 +15,19 @@ const Home = () => {
         .then(data => setCategories(data))
     }, [])
 
-    const [jobs, setJobs] = useState([]);
+    let [jobs, setJobs] = useState([]);
 
     useEffect( () => {
         fetch('jobs.json')
         .then(res => res.json())
         .then(data => setJobs(data))
     }, [])
+
+    const [showMore, setShowMore] = useState(false);
+    
+    const handleShowMore = () => {
+        setShowMore(true);
+    }
 
     return (
         <div>
@@ -48,7 +54,7 @@ const Home = () => {
 
             <CardGroup className='px-5 mx-5'>
                 {
-                    jobs.map(job => <Featured
+                    jobs.slice(0, showMore ? jobs.length : 4).map(job => <Featured
                         key={job.id}
                         job={job}
                     ></Featured>)
@@ -56,7 +62,7 @@ const Home = () => {
             </CardGroup>
 
             <div className='p-3 text-center'>
-                <Button>See All Jobs</Button>
+                <Button onClick={() => handleShowMore()}>See All Jobs</Button>
             </div>
         </div>
     );
