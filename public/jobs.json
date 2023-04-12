@@ -12,7 +12,8 @@
         "education": "Bachelor's degree in Computer Science or related field",
         "experience": "3+ years of experience in software development",
         "phoneNumber": "555-123-4567",
-        "email": "jobs@abc-tech.com"
+        "email": "jobs@abc-tech.com",
+        "jobType": ["Onsite", "Full-Time"]
     },
     {
         "id":"d5Rt8U7kLp2qA3zX",
@@ -27,7 +28,8 @@
         "education": "Bachelor's degree in Marketing or related field",
         "experience": "5+ years of experience in marketing",
         "phoneNumber": "555-234-5678",
-        "email": "jobs@xyz-corp.com"
+        "email": "jobs@xyz-corp.com",
+        "jobType": ["Remote", "Full-Time"]
     },
     {
         "id":"g4Sf6H1bJk9Mn2P",
@@ -42,7 +44,8 @@
         "education": "Associate or Bachelor's degree in Nursing",
         "experience": "1+ years of experience in medical-surgical, critical care, or emergency nursing",
         "phoneNumber": "555-345-6789",
-        "email": "jobs@123-hospital.com"
+        "email": "jobs@123-hospital.com",
+        "jobType": ["Onsite", "Part-Time"]
     },
     {
         "id":"t2W8hK4jD9fBc7Z",
@@ -57,7 +60,8 @@
         "education": "Bachelor's degree in Accounting or related field",
         "experience": "2+ years of experience in accounting",
         "phoneNumber": "555-456-7890",
-        "email": "jobs@abc-accounting.com"
+        "email": "jobs@abc-accounting.com",
+        "jobType": ["Remote", "Part-Time"]
     },
     {
         "id":"c6N8dK1lTm2jH4v",
@@ -72,7 +76,8 @@
         "education": "Bachelor's degree in Computer Science or related field.",
         "experience": "3+ years of experience in software development.",
         "phoneNumber": "123-456-7890",
-        "email": "careers@abctech.com"
+        "email": "careers@abctech.com",
+        "jobType": ["Onsite", "Part-Time"]
     },
     {
         "id":"p9L6gF3sTb7zD1x",
@@ -87,7 +92,8 @@
         "education": "Bachelor's degree in Marketing, Business Administration, or related field.",
         "experience": "5+ years of experience in digital marketing and branding.",
         "phoneNumber": "987-654-3210",
-        "email": "jobs@xyzcorp.com"
+        "email": "jobs@xyzcorp.com",
+        "jobType": ["Remote", "Full-Time"]
     },
     {
         "id":"q3E7kR1nTm5jP8h",
@@ -102,7 +108,8 @@
         "education": "Associate or Bachelor's degree in Nursing.",
         "experience": "1+ years of experience in medical-surgical, critical care, or emergency nursing.",
         "phoneNumber": "555-555-5555",
-        "email": "careers@123hospital.com"
+        "email": "careers@123hospital.com",
+        "jobType": ["Remote", "Part-Time"]
     },
     {
         "id":"z2X9bN7vC6mK8sA",
@@ -117,6 +124,7 @@
         "education": "Bachelor's degree in Graphic Design or related field.",
         "experience": "3+ years of experience in graphic design.",
         "phoneNumber": "444-444-4444",
-        "email": "careers@designco.com"
+        "email": "careers@designco.com",
+        "jobType": ["Onsite", "Full-Time"]
     }
 ]

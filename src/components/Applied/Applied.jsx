@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Applied.css'
 import Appliedjobs from '../Appliejobs/Appliedjobs';
-import { CardGroup } from 'react-bootstrap';
+import { Button, CardGroup } from 'react-bootstrap';
 
 const Applied = () => {
     const [jobs, setJobs] = useState([]);
@@ -20,9 +20,11 @@ const Applied = () => {
             <div className='jfront text-center p-3'>
                 <h2>Applied Jobs</h2>
             </div>
+            <Button></Button>
+            <Button></Button>
             <CardGroup className='p-5'>
                 {
-                    jobs.map(job => oldids.map(id => job.id == id && <Appliedjobs key={job.id} job={job}></Appliedjobs>))
+                    jobs != null ? jobs.map(job => oldids.map(id => job.id == id && <Appliedjobs key={job.id} job={job}></Appliedjobs>)): null
                 }
             </CardGroup>
             
