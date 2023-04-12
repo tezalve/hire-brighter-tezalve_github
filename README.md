@@ -16,4 +16,6 @@
 * Has a Blog page that has answers to some questions
 * Undefined routes are handled in this project
 * Only the home page is responsive for all devices
-* Many more features 
+* Many more features
+
+### Live Site: hire-brighter.netlify.app
