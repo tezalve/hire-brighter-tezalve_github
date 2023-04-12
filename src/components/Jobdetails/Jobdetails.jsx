@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Jobdetails.css'
 import { useLocation } from 'react-router-dom';
 import { Button, Card } from 'react-bootstrap';
 
 const Jobdetails = () => {
-
     const {state} = useLocation();
-    const {description, responsibilities, education, experience, salary, jobTitle, phoneNumber, email, address} = state;
+    const {id, description, responsibilities, education, experience, salary, jobTitle, phoneNumber, email, address} = state;
+
+    let oldids = localStorage.getItem('ids');
+    oldids = JSON.parse(oldids);
+    
+    if(oldids === null || oldids.length === 0){
+        var [ids, setids] = useState([]);
+    }else{
+        var [ids, setids] = useState(oldids);
+    }
+
+    const handleApplybtn = (id) => {
+        let newIds = [];
+        const exists = ids.find(idd => idd === id);
+        if(!exists){
+            newIds = [...ids, id];
+            setids(newIds);
+        }
+    }
+
+    useEffect(() => {
+        localStorage.setItem('ids', JSON.stringify(ids));
+    }, [ids]);
 
     return (
         <div>
@@ -52,7 +73,7 @@ const Jobdetails = () => {
                         </Card.Body>
                     </Card>
                     <div className='py-3'>
-                        <Button className='applybtn'>Apply Now</Button>
+                        <Button onClick={() => handleApplybtn(id)} className='applybtn'>Apply Now</Button>
                     </div>
                 </div>
             </div>

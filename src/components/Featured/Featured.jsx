@@ -4,13 +4,6 @@ import { Button, Card, CardGroup, Col } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Featured = ({job}) => {
-
-    // const navigate = useNavigate();
-
-    // const toJobdetails = () => {
-    //     navigate(`/details/${job.id}`, {state:{job}})
-    // }
-
     return (
         <div className='col-md-6'>
             <Col>
