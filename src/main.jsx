@@ -10,6 +10,7 @@ import Home from './components/Home/Home';
 import Layout from './components/Layout/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jobdetails from './components/Jobdetails/Jobdetails';
+import Applied from './components/Applied/Applied';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/details/:ID',
         element: <Jobdetails></Jobdetails>
+      },
+      {
+        path: '/applied',
+        element: <Applied></Applied>
       }
     ]
   }
