@@ -2,6 +2,8 @@ import React from 'react';
 import './Featured.css'
 import { Button, Card, CardGroup, Col } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import imgUrl1 from '../../../public/assets/icons/Frame.png'
+
 
 const Featured = ({job}) => {
     return (
@@ -24,7 +26,7 @@ const Featured = ({job}) => {
                                 <Card.Subtitle>{job.location}</Card.Subtitle>
                             </div>
                             <div className='d-flex align-items-center'>
-                                <img src="../../public/assets/icons/Frame.png" alt="" />
+                                <img src={imgUrl1} alt="" />
                                 <Card.Subtitle>{job.salary}</Card.Subtitle>
                             </div>
                         </div>

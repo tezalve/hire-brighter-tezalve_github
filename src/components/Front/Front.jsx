@@ -1,6 +1,7 @@
 import React from 'react';
 import './Front.css'
 import { Button } from 'react-bootstrap';
+import imgUrl from '../../../public/assets/all_images/P3OLGJ1copy1.png'
 
 const Front = () => {
     return (
@@ -10,7 +11,7 @@ const Front = () => {
                 <p>Find your dream job with Hire Brighter - the ultimate job search destination. Discover top job listings, apply in just a few clicks, and get personalized career resources to thrive in your career.</p>
                 <Button>Get Started</Button>
             </div>
-            <img className='frontimg' src="../../public/assets/all_images/P3OLGJ1copy1.png" alt="" />
+            <img className='frontimg' src={imgUrl} alt="" />
         </div>
     );
 };

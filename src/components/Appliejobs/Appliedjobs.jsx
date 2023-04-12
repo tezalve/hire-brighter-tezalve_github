@@ -2,6 +2,7 @@ import React from 'react';
 import './Appliedjobs.css'
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import imgUrl2 from '../../../public/assets/icons/Frame.png'
 
 const Appliedjobs = ({job}) => {
     return (
@@ -25,7 +26,7 @@ const Appliedjobs = ({job}) => {
                             <Card.Subtitle>{job.location}</Card.Subtitle>
                         </div>
                         <div className='d-flex align-items-center'>
-                            <img src="../../public/assets/icons/Frame.png" alt="" />
+                            <img src={imgUrl2} alt="" />
                             <Card.Subtitle>{job.salary}</Card.Subtitle>
                         </div>
                     </div>
