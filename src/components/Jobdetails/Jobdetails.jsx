@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Jobdetails.css'
 import { useLocation } from 'react-router-dom';
 import { Button, Card } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Jobdetails = () => {
     const {state} = useLocation();
-    const {id, description, responsibilities, education, experience, salary, jobTitle, phoneNumber, email, address} = state;
+    const {id, description, responsibilities, education, experience, salary, jobTitle, phoneNumber, email, address, companyName} = state;
 
     let oldids = localStorage.getItem('ids');
     oldids = JSON.parse(oldids);
@@ -22,6 +24,9 @@ const Jobdetails = () => {
         if(!exists){
             newIds = [...ids, id];
             setids(newIds);
+            toast.info(`Successfully Applied at "${companyName}"`);
+        }else{
+            toast.info(`Already Applied at "${companyName}"`);
         }
     }
 
@@ -31,6 +36,7 @@ const Jobdetails = () => {
 
     return (
         <div>
+            <ToastContainer/>
             <div className='jfront text-center p-3'>
                 <h2>Job Details</h2>
             </div>

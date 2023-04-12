@@ -11,6 +11,7 @@ import Layout from './components/Layout/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jobdetails from './components/Jobdetails/Jobdetails';
 import Applied from './components/Applied/Applied';
+import Statistics from './components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/applied',
         element: <Applied></Applied>
+      },
+      {
+        path:'/statistics',
+        element: <Statistics></Statistics>
       }
     ]
   }

@@ -26,7 +26,7 @@ const Applied = () => {
             </div>
             <CardGroup className='p-5'>
                 {
-                    jobs != null ? jobs.map(job => oldids.map(id => job.id == id && <Appliedjobs key={job.id} job={job}></Appliedjobs>)): null
+                    jobs.map(job => oldids.map(id => job.id == id && <Appliedjobs key={job.id} job={job}></Appliedjobs>))
                 }
             </CardGroup>
             
