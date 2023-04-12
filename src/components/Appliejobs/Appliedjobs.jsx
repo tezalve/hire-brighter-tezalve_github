@@ -4,9 +4,8 @@ import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Appliedjobs = ({job}) => {
-    console.log(job);
     return (
-        <div className='col-12 p-5'>
+        <div className='col-12 p-4'>
             <Card className='d-flex flex-row justify-content-between'>
                 <div className='d-flex align-items-center'>
                     <img className='appimg' src={job.jobLogo}/>
