@@ -17,8 +17,8 @@ const Appliedjobs = ({job}) => {
                         {job.companyName}
                     </Card.Subtitle>
                     <div className='d-flex btn-lite p-2'>
-                        <h6 className=''>Remote</h6>
-                        <h6 className='mx-2'>Onsite</h6>
+                        <h6 className=''>{job.jobType[0]}</h6>
+                        <h6 className='mx-2'>{job.jobType[1]}</h6>
                     </div>
                     <div className='d-flex p-2'>
                         <div className='d-flex align-items-center'>

@@ -1,0 +1,42 @@
+[
+    {
+        "id":"0",
+        "assignment":"A1",
+        "mark": "60"
+    },
+    {
+        "id":"1",
+        "assignment":"A2",
+        "mark": "59"
+    },
+    {
+        "id":"2",
+        "assignment":"A3",
+        "mark": "60"
+    },
+    {
+        "id":"3",
+        "assignment":"A4",
+        "mark": "60"
+    },
+    {
+        "id":"4",
+        "assignment":"A5",
+        "mark": "58"
+    },
+    {
+        "id":"5",
+        "assignment":"A6",
+        "mark": "60"
+    },
+    {
+        "id":"6",
+        "assignment":"A7",
+        "mark": "60"
+    },
+    {
+        "id":"7",
+        "assignment":"A8",
+        "mark": "60"
+    }
+]
