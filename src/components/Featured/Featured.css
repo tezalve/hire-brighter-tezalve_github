@@ -20,3 +20,10 @@
     border: 1px solid;
     padding: 2px;
 }
+
+
+@media only screen and (max-width: 820px) {
+    .locimg{
+        flex-direction: column;
+    }
+  }

@@ -38,7 +38,7 @@ const Home = () => {
                 <p>Discover a world of career possibilities with comprehensive job information at your fingertips. Your future is waiting.</p>
             </div>
 
-            <CardGroup className='px-5 mx-5'>
+            <CardGroup className='px-4 mx-4'>
                 {
                     categories.map(category => <Category
                         key={categories.indexOf(category)}
@@ -52,7 +52,7 @@ const Home = () => {
                 <p>Discover countless career possibilities with all the essential details you need. Your future starts here.</p>
             </div>
 
-            <CardGroup className='px-5 mx-5'>
+            <CardGroup className='px-4 mx-4'>
                 {
                     jobs.slice(0, showMore ? jobs.length : 4).map(job => <Featured
                         key={job.id}

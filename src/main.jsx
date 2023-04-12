@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Jobdetails from './components/Jobdetails/Jobdetails';
 import Applied from './components/Applied/Applied';
 import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path:'/statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path:'/blog',
+        element: <Blog></Blog>
       }
     ]
   }

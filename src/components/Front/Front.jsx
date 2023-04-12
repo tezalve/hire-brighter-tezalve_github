@@ -10,7 +10,7 @@ const Front = () => {
                 <p>Find your dream job with Hire Brighter - the ultimate job search destination. Discover top job listings, apply in just a few clicks, and get personalized career resources to thrive in your career.</p>
                 <Button>Get Started</Button>
             </div>
-            <img src="../../public/assets/all_images/P3OLGJ1copy1.png" alt="" />
+            <img className='frontimg' src="../../public/assets/all_images/P3OLGJ1copy1.png" alt="" />
         </div>
     );
 };
