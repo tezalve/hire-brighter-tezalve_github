@@ -18,4 +18,4 @@
 * Only the home page is responsive for all devices
 * Many more features
 
-### Live Site: hire-brighter.netlify.app
+### Live Site: (https://hire-brighter.netlify.app/)
